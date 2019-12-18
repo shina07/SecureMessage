@@ -1,0 +1,5 @@
+Commit Tags
+
+[Initial Commit]
+: Create default solution, project, etc
+
