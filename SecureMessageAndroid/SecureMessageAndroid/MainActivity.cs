@@ -3,16 +3,21 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Util;
 
 namespace SecureMessageAndroid
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class MainActivity : AppCompatActivity
     {
+        static readonly string Tag = "X:" + typeof(MainActivity).Name;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Log.Debug(Tag, "MainActivity.OnCreate");
+
             base.OnCreate(savedInstanceState);
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
         }

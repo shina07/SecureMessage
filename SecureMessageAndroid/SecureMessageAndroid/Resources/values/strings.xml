@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">SecureMessageAndroid</string>
     <string name="action_settings">Settings</string>
+
+    <!--Loading Activity-->
+  
+    <!--Main Activity-->
+    <string name="main_text">Hello, Secure World!</string>
+  
 </resources>
